@@ -86,6 +86,56 @@ my_list.append(4)
 # print (my_list.get(4))
 my_list.erase(2)
 my_list.display()
+
+
+加的其他功能：
+           def getMidVal1(self):
+              long=self.length()
+              mid=[]
+              if self.length()%2==0:
+                  mid.append(self.get(long/2))
+              else:
+                 mid.append(self.get((long-1)/2))
+              print(mid)
+      # 5->NULL
+      # The middle element is [5] ||  [5]
+      # 4->5->NULL   
+      # The middle element is [5] ||  [4,5]
+      # 3->4->5->NULL
+      # The middle element is [4] ||  [4]
+      # 2->3->4->5->NULL
+      # The middle element is [4] ||  [3,4]
+      # 1->2->3->4->5->NULL
+      # The middle element is [3] ||  [3]
+
+
+          def getMidVal2(self):
+              long=self.length()
+              mid=[]
+              if self.length()%2==0:
+                  mid.append(self.get(long/2-1))
+                  mid.append(self.get(long/2))
+              else:
+                  mid.append(self.get((long-1)/2))
+              print(mid)
+
+      # 去加個getMiddleValue() 取中間node 的值 、 list 是偶數就取 中間兩個
+
+      my_list = linked_list()
+      my_list.append(1)
+      my_list.append(2)
+      my_list.append(3)
+      my_list.append(4)
+      my_list.append(5)
+
+      # # print (my_list.get(4))
+      # my_list.erase(2)
+      print("Method 1:")
+      my_list.getMidVal1()
+      print("Method 2:")
+      my_list.getMidVal2()
+      print("Original Input: ")
+      my_list.display()
               
               
   
