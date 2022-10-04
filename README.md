@@ -89,6 +89,7 @@ my_list.display()
 
 
 加的其他功能：
+
            def getMidVal1(self):
               long=self.length()
               mid=[]
