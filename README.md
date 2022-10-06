@@ -14,7 +14,8 @@
 2）和array的区别：快速加减新的变量时间为O（1）；而array为O（n）.      
 
 
-3）自己写一个linkedlist：
+3）常见功能：isempty/ length/ add/ append/ insert/ remove/ display/ 
+己写一个linkedlist：
 
         class node:                 建立一个单独node，有数据，连下一个，目前连不上，所以是none
             def __init__(self, data=None):
